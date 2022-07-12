@@ -3,12 +3,11 @@ interface Props {
   completeTask(taskNameToDelete: string): void
 }
 
-const TodoTask = ({ task, completeTask }: Props) => {
+const TodoList = ({ task, completeTask }: Props) => {
   return (
     <div className='task'>
       <div className='content'>
         <span>{task.taskName}</span>
-        <span>{task.deadline.toDateString()}</span>
       </div>
       <button
         onClick={() => {
@@ -21,4 +20,4 @@ const TodoTask = ({ task, completeTask }: Props) => {
   )
 }
 
-export default TodoTask
+export default TodoList

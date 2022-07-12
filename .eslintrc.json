@@ -3,13 +3,14 @@
     "browser": true,
     "es2021": true,
     "jest": true
+    // "cypress/globals": true
   },
   "extends": [
+    // "plugin:cypress/recommended",
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier",
-    "plugin:cypress/recommended"
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {

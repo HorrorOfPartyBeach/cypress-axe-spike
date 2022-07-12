@@ -16,7 +16,9 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "rootDir": "src",
-    "outDir": "build"
+    "outDir": "build",
+    "types": ["cypress", "cypress-axe"]
   },
-  "include": ["src"]
+  "include": ["src", "cypress.d.ts"],
+  "exclude": ["node_modules"]
 }
